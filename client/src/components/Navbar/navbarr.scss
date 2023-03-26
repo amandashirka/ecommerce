@@ -1,0 +1,145 @@
+.navbar {
+  height: 80px;
+
+  .wrapper {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    .item {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+    }
+
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+
+      .item {
+        font-size: 16px;
+      }
+    }
+
+    .center {
+      font-size: 30px;
+      letter-spacing: 2px;
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+
+      .icons {
+        display: flex;
+        gap: 15px;
+        color: #777;
+        cursor: pointer;
+
+        .cartIcon {
+          position: relative;
+
+          span {
+            font-size: 12px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #2879fe;
+            color: white;
+            position: absolute;
+            right: -10px;
+            top: -10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar .wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navbar .wrapper .left {
+    margin-bottom: 10px;
+    gap: 10px;
+
+    .item {
+      font-size: 14px;
+    }
+  }
+
+  .navbar .wrapper .center {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .navbar .wrapper .right {
+    gap: 10px;
+
+    .icons {
+      gap: 10px;
+
+      .cartIcon span {
+        font-size: 10px;
+        width: 15px;
+        height: 15px;
+        right: -8px;
+        top: -8px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .navbar .wrapper {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .navbar .wrapper .left {
+    gap: 50px;
+
+    .item {
+      font-size: 16px;
+    }
+  }
+
+  .navbar .wrapper .center {
+    font-size: 36px;
+  }
+
+  .navbar .wrapper .right {
+    gap: 50px;
+
+    .icons {
+      gap: 15px;
+
+      .cartIcon span {
+        font-size: 12px;
+        width: 20px;
+        height: 20px;
+        right: -10px;
+        top: -10px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navbar .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}

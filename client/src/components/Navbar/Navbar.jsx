@@ -74,7 +74,7 @@ import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import { Link } from "react-router-dom";
-import "./Navbar.scss";
+import "./navbarr.scss";
 import Cart from "../Cart/Cart";
 import Account from "../Account/Account";
 const Navbar = () =>{
